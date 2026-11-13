@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scankit"
+version = "0.1.0"
+description = "Stereo scanning: capture (OAK-D, OAK-D Lite, ZED Mini), neural stereo depth, reconstruction"
+requires-python = ">=3.11"
+dependencies = ["argcomplete"]
+
+[project.scripts]
+scan = "scankit.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["scankit*"]

@@ -1,0 +1,18 @@
+name: scan
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      - depthai>=3.12,<4
+      - open3d==0.19.0
+      - opencv-python
+      - numpy
+      - pillow
+      - pycolmap>=4.2
+      - torch>=2.4
+      - torchvision>=0.19
+      - hidapi
+      - argcomplete
+      - -e .            # the `scan` command

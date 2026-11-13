@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+.ipynb_checkpoints/
+
+# Scan data (large, personal imagery) and reconstruction output
+scans/
+out/
+*.ply
+*.mp4
+
+# Per-device calibration files (named by camera serial number)
+calib/
+
+# Model weights and caches
+*.pth
+*.pt
+.cache/
+
+# Editor / OS
+.DS_Store
+.vscode/
+.idea/
+.claude/
